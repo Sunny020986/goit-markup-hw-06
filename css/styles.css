@@ -355,6 +355,16 @@ line-height: calc(14 / 12);
 color: var(--primary-text-color);
 }
 
+.modal-submit-button{
+width: 200px;
+height: 50px; 
+
+color: var(--secondary-background-color);
+background-color:var(--accent-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+
 /*****************  benefits section  ************/
 
 .benefits-list {
