@@ -473,7 +473,7 @@
         </div>
 
         <div class="footer-block">
-          <p class="footer-tittle">присоединяйтесь</p>
+          <strong class="footer-tittle">присоединяйтесь</strong>
           <ul class="social-list list">
             <li class="social-item">
               <a href="" class="footer-link-social">
@@ -505,6 +505,25 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe-container">
+          <strong class="footer-tittle-subscribe"
+            >подпишитесь на рассылку</strong
+          >
+          <form class="footer-form" method="get" autocomplete="on">
+            <input
+              class="footer-input"
+              name="email"
+              type="email"
+              placeholder="E-mail"
+            />
+            <button class="footer-submit" type="submit">
+              Подписатся
+              <svg class="footer-subscribe-svg" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-submit"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -517,6 +536,22 @@
             </use>
           </svg>
         </button>
+        <p class="modal-tittle">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form" action="">
+          <label for="">Имя
+          <input type="text">
+          </label>
+          <label for="">Телефон
+          <input type="tel">
+          </label>
+          <label for="">Почта
+          <input type="email">
+          </label>
+          <label for="">Коментарий
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          </label>
+          
+          </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

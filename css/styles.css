@@ -280,12 +280,15 @@ margin left: 50px;
 
 .modal {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  min-width: 528px;
-  min-height: 581px;
+  padding: 40px;
+  width: 528px;
+  height: 581px;
 
   background: var(--primary-title-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -317,6 +320,20 @@ margin left: 50px;
 .modal-close-button:focus,
 .modal-close-button:hover {
   cursor: pointer;
+}
+
+.modal-tittle{
+font-weight: bold;
+font-size: 20px;
+/* line-height: var(23 / 20); */
+/* text-align: center; */
+
+color: var(--secondary-title-color);
+}
+
+.modal-form{
+  display: flex;
+  flex-direction: column;
 }
 
 /*****************  benefits section  ************/
