@@ -362,6 +362,29 @@ ul {
   height: 18px;
 }
 
+.icon-person {
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 45px;
+  left: -4px;
+}
+
+.icon-phone {
+  position: relative;
+
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 45px;
+  left: -28px;
+}
+
+.icon-email {
+  position: relative;
+  transform: translate(-50% -50%);
+  top: 35px;
+  left: -25px;
+}
+
 .modal-submit-button {
   width: 200px;
   height: 50px;
@@ -386,13 +409,13 @@ ul {
   display: flex;
   align-items: baseline;
   justify-content: center;
-  /* margin-top: 20px; */
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .modal-textarea {
   padding: 10px;
   margin-top: 4px;
+  margin-bottom: 20px;
   width: 100%;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
