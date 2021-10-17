@@ -7,6 +7,7 @@
   --background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
   --social-icon-color: #afb1b8;
+  --button-background-color: #188ce8;
 }
 
 /* стандартные параметры стиля */
@@ -256,7 +257,7 @@ ul {
   cursor: pointer;
 
   color: var(--primary-title-color);
-  background-color: #188ce8;
+  background-color: var(--button-background-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -327,8 +328,6 @@ ul {
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 12px;
-  /* line-height: var(23 / 20); */
-  /* text-align: center; */
 
   color: var(--secondary-title-color);
 }
@@ -360,6 +359,7 @@ ul {
 .icon-modal {
   width: 18px;
   height: 18px;
+  transform: fill 250 cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-person {
@@ -385,6 +385,11 @@ ul {
   left: -25px;
 }
 
+.modal-label:focus .icon-modal,
+.modal-label:hover .icon-modal {
+  fill: var(--accent-color);
+}
+
 .modal-submit-button {
   width: 200px;
   height: 50px;
@@ -400,7 +405,7 @@ ul {
 
 .modal-submit-button:hover,
 .modal-submit-button:focus {
-  background-color: #188ce8;
+  background-color: var(--button-background-color);
 }
 
 .modal-label-checbox {
@@ -968,6 +973,12 @@ ul {
   background: var(--accent-color);
   border-radius: 4px;
   border-style: none;
+  /* transition: background-color 250 cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.footer-submit:hover,
+.footer-submit:focus {
+  background-color: var(--button-background-color);
 }
 
 .footer-subscribe-svg {
