@@ -356,13 +356,11 @@ ul {
   color: var(--primary-text-color);
 }
 
-.modal-text {
-  display: inline-block;
-}
-
 .modal-submit-button {
   width: 200px;
   height: 50px;
+  margin-left: auto;
+  margin-right: auto;
 
   color: var(--secondary-background-color);
   background-color: var(--accent-color);
@@ -371,10 +369,32 @@ ul {
   border: none;
 }
 
+.modal-label-style {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 .modal-textarea {
   margin-top: 4px;
   width: 100%;
   resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-checbox {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-Link {
+  color: var(--accent-color);
+  margin-left: 4px;
 }
 
 /*****************  benefits section  ************/
