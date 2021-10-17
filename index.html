@@ -68,7 +68,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="main-btn" type="button" data-modal-open>Заказать услугу</button>
+          <button class="main-btn" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -528,42 +530,75 @@
     </footer>
 
     <!--  ****************** modal window ******************** -->>
-    <div  class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="modal-close-button" type="button">
-          <svg class="modal-close-icon" >
-            <use href="./images/symbol-defs.svg#icon-close">
-            </use>
+          <svg class="modal-close-icon">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
         <p class="modal-tittle">Оставьте свои данные, мы вам перезвоним</p>
-        <form class="modal-form" action="">
-          <label class="modal-label" for="name" type="">Имя
+        <form class="modal-form" action="#">
+          <label class="modal-label" for="name"
+            >Имя
             <!-- <svg>
             <use href="./images/symbol-defs.svg#icon-email">
 
             </use>
           </svg> -->
-          <input class="modal-input" type="text" name="name" id="name" minlength="2" required>
+            <input
+              class="modal-input"
+              type="text"
+              name="name"
+              id="name"
+              minlength="2"
+              required
+            />
           </label>
-          <label class="modal-label" for="tel" type="">Телефон
-          <input class="modal-input" type="tel" name="tel" id="tel" required>
+          <label class="modal-label" for="tel"
+            >Телефон
+            <input
+              class="modal-input"
+              type="tel"
+              name="tel"
+              id="tel"
+              required
+            />
           </label>
-          <label class="modal-label" for="email">Почта
-          <input class="modal-input" type="email" name="email" id="email" required>
+          <label class="modal-label" for="email"
+            >Почта
+            <input
+              class="modal-input"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
           </label>
-          <label class="modal-label" for="comment">Коментарий
-          <textarea class="modal-textarea" name="comment" id="comment" cols="30" rows="10"></textarea>
+          <label class="modal-label" for="comment"
+            >Коментарий
+            <textarea
+              class="modal-textarea"
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+            ></textarea>
           </label>
-          <label class="modal-label modal-label-checbox" for="">
-            <input class="modal-checbox" type="checkbox" required><pre> </pre>Соглашаюсь с рассылкой и принимаю
-            <a class="modal-Link" href="">Условия договора</a>
-        </label>
-          <button class="modal-submit-button" type="submit" >Отправить</button>
-          </form>
+          <label class="modal-label modal-label-checbox" for="checbox">
+            <input
+              class="modal-checbox"
+              type="checkbox"
+              id="checbox"
+              name="checbox"
+              required
+            />Соглашаюсь с рассылкой и принимаю
+            <a class="modal-Link" href="#">Условия договора</a>
+          </label>
+          <button class="modal-submit-button" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
-</body>
   </body>
 </html>
