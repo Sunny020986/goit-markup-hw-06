@@ -357,6 +357,11 @@ ul {
   color: var(--primary-text-color);
 }
 
+.icon-modal {
+  width: 18px;
+  height: 18px;
+}
+
 .modal-submit-button {
   width: 200px;
   height: 50px;
