@@ -538,7 +538,7 @@
         </button>
         <p class="modal-tittle">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form" action="#">
-          <label class="modal-label" for="name"
+          <label class="modal-label"
             >Имя
             <svg class="icon-modal icon-person">
               <use href="./images/symbol-defs.svg#icon-person"></use>
@@ -547,25 +547,18 @@
               class="modal-input"
               type="text"
               name="name"
-              id="name"
               minlength="2"
               required
             />
           </label>
-          <label class="modal-label" for="tel"
+          <label class="modal-label"
             >Телефон
             <svg class="icon-modal icon-phone">
               <use href="./images/symbol-defs.svg#icon-phone"></use>
             </svg>
-            <input
-              class="modal-input"
-              type="tel"
-              name="tel"
-              id="tel"
-              required
-            />
+            <input class="modal-input" type="tel" name="tel" required />
           </label>
-          <label class="modal-label" for="email"
+          <label class="modal-label"
             >Почта
             <svg class="icon-modal icon-email">
               <use href="./images/symbol-defs.svg#icon-email"></use>
@@ -574,12 +567,11 @@
               class="modal-input"
               type="email"
               name="email"
-              id="email"
               autofocus
               required
             />
           </label>
-          <label class="modal-label" for="comment"
+          <label class="modal-label"
             >Коментарий
             <textarea
               class="modal-textarea"
@@ -590,11 +582,10 @@
               rows="10"
             ></textarea>
           </label>
-          <label class="modal-label modal-label-checbox" for="checbox">
+          <label class="modal-label modal-label-checbox">
             <input
               class="modal-checbox"
               type="checkbox"
-              id="checbox"
               name="checbox"
               required
             />
