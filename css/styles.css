@@ -396,15 +396,16 @@ ul {
 
   color: var(--secondary-background-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-submit-button:hover,
 .modal-submit-button:focus {
   background-color: var(--button-background-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .modal-label-checbox {
@@ -924,8 +925,7 @@ ul {
 }
 
 .footer-subscribe-container {
-  position: relative;
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .footer-subscribe {
