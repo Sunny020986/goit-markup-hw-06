@@ -414,9 +414,10 @@ ul {
   margin-top: 20px;
 }
 
+/* 
 .modal-checbox {
-  /* appearance: none; */
-}
+  appearance: none;
+} */
 
 .modal-checbox:checked + .icon-check {
   background-color: var(--accent-color);
@@ -488,9 +489,9 @@ ul {
   background-color: #f5f4fa;
   border-radius: 4px;
 }
-
+/* 
 .benefits-icon {
-}
+} */
 
 .list-service {
   margin-bottom: 10px;
