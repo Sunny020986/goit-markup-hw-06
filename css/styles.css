@@ -410,8 +410,10 @@ ul {
 .modal-checbox:checked + .icon-check {
   background-color: var(--accent-color);
   background-image: url(../images/icon-check.svg#icon-check);
-  background-size: contain;
-  background-origin: content-box;
+
+  background-size: auto;
+  /* background-origin: border-box; */
+  border: hidden;
 }
 
 .icon-check {
