@@ -344,9 +344,9 @@ ul {
   padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   margin-top: 4px;
-  transition: border-color 1150 cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: border-color 1150 cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .modal-label {
@@ -359,13 +359,13 @@ ul {
   margin-top: 10px;
 }
 
-.modal-label:focus-within .modal-label:focus .modal-input {
-  border-color: var(--accent-color);
-}
-
+.modal-label:hover .modal-input,
+.modal-label:focus .modal-input,
+.modal-label:hover .modal-input,
 .modal-label:focus .icon-modal,
 .modal-label:hover .icon-modal {
   fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .icon-modal {
@@ -388,6 +388,8 @@ ul {
   border-radius: 4px;
 }
 
+.modal-textarea:focus-within,
+/* .modal-textarea:hover-within, */
 .modal-textarea:hover,
 .modal-textarea:focus {
   border-color: var(--accent-color);
@@ -411,20 +413,20 @@ ul {
   background-color: var(--accent-color);
   background-image: url(../images/icon-check.svg#icon-check);
 
-  background-size: auto;
-  /* background-origin: border-box; */
+  background-size: cover;
+  background-origin: content-box;
   border: hidden;
 }
 
 .icon-check {
   width: 16px;
-  height: 16px;
+  height: 15px;
   margin-right: 8px;
   border: 2px solid var(--secondary-title-color);
   border-radius: 4px;
   background-color: var(--primary-title-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 2250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-Link {
