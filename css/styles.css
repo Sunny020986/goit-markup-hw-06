@@ -359,7 +359,7 @@ ul {
   margin-top: 10px;
 }
 
-.modal-label:hover .modal-input,
+/* .modal-label:focus-within .modal-input, */
 .modal-label:focus .modal-input,
 .modal-label:hover .modal-input,
 .modal-label:focus .icon-modal,
