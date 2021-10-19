@@ -349,6 +349,7 @@ ul {
 }
 
 .modal-label {
+  position: relative;
   font-family: Roboto;
   letter-spacing: 0.01em;
   font-size: 12px;
@@ -362,38 +363,58 @@ ul {
   border-color: var(--accent-color);
 }
 
-.icon-modal {
-  position: relative;
-  transform: translate(-50%, -50%);
-  width: 18px;
-  height: 18px;
-  transform: fill 250 cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-person {
-  top: 45px;
-  left: -4px;
-}
-
-.icon-phone {
-  top: 45px;
-  left: -28px;
-}
-
-.icon-email {
-  top: 45px;
-  left: -15px;
-}
-
 .modal-label:focus .icon-modal,
 .modal-label:hover .icon-modal {
   fill: var(--accent-color);
 }
 
+.icon-modal {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  top: 36px;
+  right: 405px;
+  transform: fill 250 cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea {
+  padding: 10px;
+  margin-top: 4px;
+  width: 100%;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-textarea:hover,
+.modal-textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-label-checbox {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.modal-checbox {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-Link {
+  color: var(--accent-color);
+  margin-left: 4px;
+}
+
 .modal-submit-button {
   width: 200px;
   height: 50px;
-  margin: 0 auto;
+  margin: 20px auto;
   cursor: pointer;
 
   color: var(--secondary-background-color);
@@ -408,39 +429,6 @@ ul {
 .modal-submit-button:focus {
   background-color: var(--button-background-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.modal-label-checbox {
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.modal-textarea {
-  padding: 10px;
-  margin-top: 4px;
-  width: 100%;
-  resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-
-.modal-textarea:hover {
-  border-color: var(--accent-color);
-}
-
-.modal-checbox {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-
-.modal-Link {
-  color: var(--accent-color);
-  margin-left: 4px;
 }
 
 /*****************  benefits section  ************/
@@ -967,8 +955,6 @@ ul {
   line-height: calc(30 / 16);
   font-weight: bold;
   letter-spacing: 0.06em;
-  height: 50px;
-  width: 200px;
   cursor: pointer;
   padding: 10px 29px;
   margin-left: 12px;

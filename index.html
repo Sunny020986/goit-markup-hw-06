@@ -540,9 +540,6 @@
         <form class="modal-form" action="#">
           <label class="modal-label"
             >Имя
-            <svg class="icon-modal icon-person">
-              <use href="./images/symbol-defs.svg#icon-person"></use>
-            </svg>
             <input
               class="modal-input"
               type="text"
@@ -550,19 +547,19 @@
               minlength="2"
               required
             />
+            <svg class="icon-modal icon-person">
+              <use href="./images/symbol-defs.svg#icon-person"></use>
+            </svg>
           </label>
           <label class="modal-label"
             >Телефон
+            <input class="modal-input" type="tel" name="tel" required />
             <svg class="icon-modal icon-phone">
               <use href="./images/symbol-defs.svg#icon-phone"></use>
             </svg>
-            <input class="modal-input" type="tel" name="tel" required />
           </label>
           <label class="modal-label"
             >Почта
-            <svg class="icon-modal icon-email">
-              <use href="./images/symbol-defs.svg#icon-email"></use>
-            </svg>
             <input
               class="modal-input"
               type="email"
@@ -570,6 +567,9 @@
               autofocus
               required
             />
+            <svg class="icon-modal icon-email">
+              <use href="./images/symbol-defs.svg#icon-email"></use>
+            </svg>
           </label>
           <label class="modal-label"
             >Коментарий
