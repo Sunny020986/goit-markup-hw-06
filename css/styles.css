@@ -389,7 +389,6 @@ ul {
 }
 
 .modal-textarea:focus-within,
-/* .modal-textarea:hover-within, */
 .modal-textarea:hover,
 .modal-textarea:focus {
   border-color: var(--accent-color);
