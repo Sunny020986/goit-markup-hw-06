@@ -346,6 +346,7 @@ ul {
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 4px;
+  transition: border-color 1150 cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-label {
@@ -375,7 +376,7 @@ ul {
   height: 18px;
   top: 36px;
   right: 405px;
-  transform: fill 250 cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250 cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea {
@@ -396,8 +397,8 @@ ul {
   font-size: 14px;
   line-height: calc(24 / 14);
   display: flex;
-  align-items: baseline;
   justify-content: center;
+  align-items: baseline;
   margin-top: 20px;
 }
 
