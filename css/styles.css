@@ -418,7 +418,7 @@ ul {
   appearance: none;
 } */
 
-.modal-checbox:checked + .icon-check {
+.modal-checbox:checked + .icon-checkbox {
   background-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
   border-color: var(--accent-color);
@@ -427,7 +427,7 @@ ul {
   /* border: hidden; */
 }
 
-.icon-check {
+.icon-checkbox {
   width: 16px;
   height: 15px;
   margin-right: 8px;
