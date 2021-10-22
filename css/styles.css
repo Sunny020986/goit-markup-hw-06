@@ -308,9 +308,8 @@ ul {
 
 .modal-close-button {
   position: absolute;
-  top: 0;
-  right: 0;
-  margin: 8px 6px;
+  top: 8px;
+  right: 8px;
 
   width: 30px;
   height: 30px;
@@ -336,7 +335,7 @@ ul {
 .modal-tittle {
   font-weight: bold;
   font-size: 20px;
-
+  margin-bottom: 12px;
   color: var(--secondary-title-color);
 }
 
@@ -363,7 +362,7 @@ ul {
   font-size: 12px;
   line-height: calc(14 / 12);
   color: var(--primary-text-color);
-  margin-top: 10px;
+  margin-bottom: 12px;
 }
 
 .modal-label:focus-within .modal-input,
@@ -411,7 +410,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* 
@@ -447,7 +446,7 @@ ul {
 .modal-submit-button {
   width: 200px;
   height: 50px;
-  margin: 20px auto;
+  margin: 0px auto;
   cursor: pointer;
 
   color: var(--secondary-background-color);
